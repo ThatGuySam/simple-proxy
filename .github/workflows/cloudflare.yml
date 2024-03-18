@@ -4,7 +4,7 @@ name: Deploy Worker
 # repository_dispatch is triggered by CF
 # secrets should also be made by CF
 
-on: ["repository_dispatch"]
+on: ["repository_dispatch", "workflow_dispatch", "push"]
 
 jobs:
   deploy:
